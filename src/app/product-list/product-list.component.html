@@ -1,8 +1,8 @@
 <h2>Products</h2>
-
-<div *ngFor="let product of products">
-
+<div class="product-list">
+<div class="product" *ngFor="let product of products">
     <h3>
+        <img src="https://s13emagst.akamaized.net/products/40685/40684413/images/res_16a3a662e1b74dd715c857686c585cd7.jpg" alt="iphone">
         <a [title]="product.name + ' details'"
          [routerLink]="['/products', product.id]">
             {{ product.name }}
@@ -19,6 +19,5 @@
     
     <app-product-alerts [product]="product" (notify)="onNotify()">
     </app-product-alerts>
-
-
+</div>
 </div>
