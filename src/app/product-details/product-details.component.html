@@ -1,9 +1,15 @@
+<div class="body">
 <h2>Product Details</h2>
 
 <div *ngIf="product" class="product">
-    <img src="https://s13emagst.akamaized.net/products/40685/40684413/images/res_16a3a662e1b74dd715c857686c585cd7.jpg" alt="iphone.png">
+    <p><img src="https://s13emagst.akamaized.net/products/40685/40684413/images/res_16a3a662e1b74dd715c857686c585cd7.jpg"
+        alt="iphone.png">
+        <img src="https://techmende.com/wp-content/uploads/2021/09/sunset-gold-iphone-13-render.png"
+            alt="iphone2.png">
+                </p>
     <h3>{{ product.name }}</h3>
     <h4>{{ product.price | currency }}</h4>
     <p>{{ product.description }}</p>
     <button type="button" (click)="addToCart(product)">Buy</button>
+</div>
 </div>
